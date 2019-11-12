@@ -1,14 +1,15 @@
-* {
-    box-sizing: border-box; 
-}
-    
 body {
-    background-image: url("../Background Images/papyrus.png");
+    background-image: url("/assets/images/papyrus.png");
     font-size: 18px;
     line-height: 34px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777;
 }
+* {
+    box-sizing: border-box; 
+}
+    
+/* general */
 
 .container {
     width: 100%;
@@ -25,7 +26,7 @@ p:last-child {
 }
 
 h1, h2, h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 700;
     color: #4aaaa5;
 }
@@ -41,7 +42,9 @@ h2, h3 {
     font-size: 22px;
 }
 
-#teal-header {
+/* header */
+
+#masthead {
     background: #ffffff;
     margin: 0 0 30px;
     z-index: 99;
@@ -84,41 +87,82 @@ nav a:first-child {
     border-left: 0 none;
 }
 
+/* footer */
+
+footer {
+    background: #666666;
+    color: #ffffff;
+    color: #cccccc;
+    padding: 30px 0;
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;   
+    font-size: 12px;
+    text-align: center;
+}
+h3, .sidebar, h2 {
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+/* main */
+
 #main-container {
     padding-top: 130px;
+    min-height: calc(100vh - 70px);
 }
-.main-container {
+.main-section {
     background: #ffffff;
     padding: 30px;
     margin: 0 0 40px 0;
     width: 100%;
-    max-width: 650px;
+    max-width: 960px;
     float: left;
     border: 1px solid #dddddd;
 }
 
-#catcontainer {
-    width: 200px;
-    height: 200px;
+/* portfolio page */
+
+.work {
+    position: relative;
     float: left;
-    margin-right: 20px;
-}
-
-.head-shot {
-    object-fit: cover;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
     width: 100%;
-    height: 100%;
-   
-}
-
-.auth-image {
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+  .auth-image {
     width: 200px;
     height: auto;
     margin-top: 10px;
     float: left;
     margin-right: 25px;
 }
-
 .sidebar {
     background: #ffffff;
     padding: 30px;
@@ -129,13 +173,46 @@ nav a:first-child {
     margin-bottom: 20px;
 }
 
-h3, .sidebar, h2 {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-}
+/* contact page */
 
+#contact-form ul {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
+  
 .social {
     width: 62px;
     height: 62px;
@@ -147,13 +224,16 @@ h3, .sidebar, h2 {
     margin-right: 0;
 }
 
-footer {
-    background: #666666;
-    color: #ffffff;
-    padding: 30px 0;
-    clear: both;
-    border-top: 8px solid #4aaaa5;
-    color: #cccccc;
-    font-size: 12px;
-    text-align: center;
+/* #catcontainer {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
 }
+
+.head-shot {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} */
+
