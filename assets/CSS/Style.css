@@ -158,7 +158,7 @@ h3, .sidebar, h2 {
   }
   .auth-image {
     width: 200px;
-    height: auto;
+    height: 200px;
     margin-top: 10px;
     float: left;
     margin-right: 25px;
@@ -167,7 +167,7 @@ h3, .sidebar, h2 {
     background: #ffffff;
     padding: 30px;
     width: 100%;
-    max-width: 270px;
+    max-width: 250px;
     float: right;
     border: 1px solid #dddddd;
     margin-bottom: 20px;
